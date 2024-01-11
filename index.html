@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ritul's Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display"><p>0</p></div>
+        <div class="button-row">
+            <button  id="b1"  class="clear" onclick="clearDisplay()">AC</button>
+            <button id="b1"  onclick="setOperation('%')">%</button>
+            <button  id="b1" onclick="setOperation('⬅')">⬅</button>
+            <button  id="b" onclick="setOperation('/')">/</button>
+        </div>
+        <div class="button-row">
+            <button  id="b2"onclick="appendNumber('7')">7</button>
+            <button  id="b2"onclick="appendNumber('8')">8</button>
+            <button  id="b2"onclick="appendNumber('9')">9</button>
+            <button id="b" onclick="setOperation('*')">x</button>
+        </div>
+        <div class="button-row">
+            <button  id="b2"onclick="appendNumber('4')">4</button>
+            <button  id="b2"onclick="appendNumber('5')">5</button>
+            <button  id="b2"onclick="appendNumber('6')">6</button>
+            <button id="b" onclick="setOperation('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button  id="b2"onclick="appendNumber('1')">1</button>
+            <button  id="b2"onclick="appendNumber('2')">2</button>
+            <button  id="b2"onclick="appendNumber('3')">3</button>
+            <button id="b" onclick="setOperation('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button  id="b2"class="zero" onclick="appendNumber('0')">0</button>
+            <button  id="b2"onclick="addDecimal()">.</button>
+            <button id="b" class="operation" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
